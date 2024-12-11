@@ -1,0 +1,13 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: helloenv-app
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  secretRef:
+    name: ssh-credentials
+  url: ssh://git@github.com/infraloudio/flux-helloenv-app

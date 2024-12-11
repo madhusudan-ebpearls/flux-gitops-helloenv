@@ -1,0 +1,12 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: helloenv-prod
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: helloenv
+  policy:
+    semver:
+      range: '>=1.0.0'

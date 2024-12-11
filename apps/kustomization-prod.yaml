@@ -1,0 +1,14 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: helloenv-prod
+  namespace: flux-system
+spec:
+  interval: 30s
+  path: ./demo/kustomize/prod/
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: helloenv-app
+  targetNamespace: helloenv-prod
