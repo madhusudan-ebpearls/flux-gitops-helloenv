@@ -10,4 +10,4 @@ spec:
     branch: main
   secretRef:
     name: ssh-credentials
-  url: ssh://git@github.com/infraloudio/flux-helloenv-app
+  url: ssh://git@github.com/madhusudan-ebpearls/flux-helloenv-app
