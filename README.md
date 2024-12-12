@@ -50,11 +50,11 @@ This instructs Flux on how to interact with the Git repository where your applic
 This file is responsible for scanning the Docker image registry and fetching image tags based on the defined policy. Here's the configuration:  
 
 ```yaml
-image: docker.io/shapai/helloenv
+image: docker.io/sudan4455/helloenv
 interval: 1m0s
 ```
 
-`image:` Specifies the Docker image repository ( e.g docker.io/shapai/helloenv) to scan for image tags. Change this to have your relevant Docker image repository, where the CI job will build and push the image. This same registry needs to be updated in your forked CI file, where the CI build will push images.  
+`image:` Specifies the Docker image repository ( e.g docker.io/sudan4455/helloenv) to scan for image tags. Change this to have your relevant Docker image repository, where the CI job will build and push the image. This same registry needs to be updated in your forked CI file, where the CI build will push images.  
 
 #### image-policy-staging.yaml 
 
